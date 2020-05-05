@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import dashboradRoutes from './dashboard.routes';
+import maratonaRoutes from './maratona.routes';
 
 const routes = Router();
 
-routes.get('/', dashboradRoutes);
+routes.use('/maratona', maratonaRoutes);
 
 export default routes;
